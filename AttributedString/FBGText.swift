@@ -9,21 +9,22 @@ import SwiftUI
 
 struct FBGText: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        Text("**Text in bold**")
-        Text("*Text in italic*")
-        Text("~This text is crossed out~")
-        Text("Find out more about [this app here](http://www.google.com)")
-
-
-        // Underline
-        Text("Underlined").underline()
-
-        CustomText(convertMarkdown("Find out more about \n \t [this app here](http://www.google.com)"))
-
-        CustomText(convertMarkdown("^[custom](customColor: 'red') text"))
-        CustomText(convertMarkdown("^[custom](customColor: 'green') text"))
-        CustomText(convertMarkdown("^[custom](customColor: 'yellow') text"))
+//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Text("**Text in bold**")
+//        Text("*Text in italic*")
+//        Text("~This text is crossed out~")
+//        Text("Find out more about [this app here](http://www.google.com)")
+//
+//
+//        // Underline
+//        Text("Underlined").underline()
+//
+//        CustomText(convertMarkdown("Find out more about \n \t [this app here](http://www.google.com)"))
+//
+//        CustomText(convertMarkdown("^[custom](color: 'red') text"))
+//        CustomText(convertMarkdown("^[custom](color: 'green') text"))
+//        CustomText(convertMarkdown("^[custom](color: 'yellow') text"))
+        CustomText(convertMarkdown("^[this will be red](color: 'FF0000') text"))
     }
 
     private func convertMarkdown(_ string: String) -> AttributedString {
@@ -90,13 +91,7 @@ public struct CustomText: View {
             }
             let range = run.range
             if let value = run.customColor {
-                if value == .yellow {
-                    attrString[range].foregroundColor = .yellow
-                } else if value == .green {
-                    attrString[range].foregroundColor = .green
-                } else if value == .red {
-                    attrString[range].foregroundColor = .red
-                }
+                attrString[range].foregroundColor = Color(hex: value)
             }
         }
 

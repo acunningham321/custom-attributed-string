@@ -17,11 +17,8 @@ public extension AttributeScopes {
 }
 
 public enum CustomColorAttributes: CodableAttributedStringKey, MarkdownDecodableAttributedStringKey {
-  public enum Value: String, Codable {
-    case yellow, green, red
-  }
-
-  public static var name = "customColor"
+  public typealias Value = String
+  public static var name = "color"
 }
 
 public extension AttributeDynamicLookup {
@@ -31,3 +28,4 @@ public extension AttributeDynamicLookup {
     self[T.self]
   }
 }
+

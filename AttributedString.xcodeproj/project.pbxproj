@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA88CCD2BB2090400DA302E /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA88CCC2BB2090400DA302E /* Color+Extensions.swift */; };
 		6DC8C7AA2B9118D300715AB3 /* AttributedStringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC8C7A92B9118D300715AB3 /* AttributedStringApp.swift */; };
 		6DC8C7AE2B9118D500715AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC8C7AD2B9118D500715AB3 /* Assets.xcassets */; };
 		6DC8C7B12B9118D500715AB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC8C7B02B9118D500715AB3 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DA88CCC2BB2090400DA302E /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		6DC8C7A62B9118D300715AB3 /* AttributedString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttributedString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC8C7A92B9118D300715AB3 /* AttributedStringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringApp.swift; sourceTree = "<group>"; };
 		6DC8C7AD2B9118D500715AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				6DC8C7A92B9118D300715AB3 /* AttributedStringApp.swift */,
 				6DC8C7B72B91267E00715AB3 /* FBGText.swift */,
+				6DA88CCC2BB2090400DA302E /* Color+Extensions.swift */,
 				6DC8C7B92B964B1900715AB3 /* AttributedScopes.swift */,
 				6DC8C7AD2B9118D500715AB3 /* Assets.xcassets */,
 				6DC8C7AF2B9118D500715AB3 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA88CCD2BB2090400DA302E /* Color+Extensions.swift in Sources */,
 				6DC8C7AA2B9118D300715AB3 /* AttributedStringApp.swift in Sources */,
 				6DC8C7BA2B964B1900715AB3 /* AttributedScopes.swift in Sources */,
 				6DC8C7B82B91267E00715AB3 /* FBGText.swift in Sources */,
